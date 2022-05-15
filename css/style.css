@@ -177,6 +177,10 @@ body {
     .right {
         display: none;
     }
+    .left .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .left .container .logo {
         width: 50%;
     }
