@@ -1,0 +1,183 @@
+body {
+    background-color: #181818;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    margin: 0 auto;
+}
+
+.left .container {
+    padding: 35px 120px;
+}
+
+.left .container .logo {
+    width: 240px;
+}
+
+.left .container form {
+    margin-top: 60px;
+}
+
+.left .container form label {
+    color: white;
+}
+
+.left .container form input {
+    background-color: transparent;
+    border: 1px solid #777;
+    height: 35px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.left .container form input[type="email"] {
+    margin-bottom: 30px;
+}
+
+.left .container form button {
+    width: 102%;
+    height: 40px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: #f96816;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.left .container .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.left .container .links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.left .container .links a:nth-of-type(2) {
+    text-transform: lowercase;
+}
+
+.left .container .or {
+    display: flex;
+    align-items: center;
+}
+
+.left .container .or span {
+    color: white;
+    padding: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.left .container .or hr {
+    flex: auto;
+    height: 1px;
+    border: none;
+    background: #aaa;
+}
+
+.left .container button {
+    width: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px 15px;
+}
+
+.left .container button:hover {
+    background-color: #f96816;
+    border-color: transparent;
+}
+
+.left .container button a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.left footer {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+.left footer p {
+    color: #777;
+    font-size: 13px;
+}
+
+.left footer a {
+    color: #f96816;
+    padding-left: 5px;
+}
+
+.left footer a:nth-of-type(1) {
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60%;
+    background-image: url(../img/login-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.right p {
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+
+.right button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 30px;
+    width: 60%;
+}
+
+.right button:hover {
+    background-color: #f96816;
+    border-color: transparent;
+}
+
+.right button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width:767px) {
+    .right {
+        display: none;
+    }
+    .left .container .logo {
+        width: 50%;
+    }
+}
